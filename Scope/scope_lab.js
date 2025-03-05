@@ -31,3 +31,26 @@ show();
 // console.log(functionVar); // Throws ReferenceError
 // console.log(functionLet); // Throws ReferenceError
 // console.log(functionConst); // Throws ReferenceError
+
+{
+    var blockVar2 = "I'm a block-scoped var";
+    let blockLet = "I'm a block-scoped let";
+    const blockConst = "I'm a block-scoped const";
+
+    blockLet = "new let";
+    blockVar2 = "new var";
+    // blockConst = "new conts"; // Throws invalid assignment to const
+}
+
+// console.log(blockVar);
+// console.log(blockLet);
+// console.log(blockConst);
+
+blockLet = "new let"; // Default declaration - > var
+blockVar2 = "new var";  
+blockConst = "new conts"; 
+
+
+console.log(blockVar);
+console.log(blockLet);
+console.log(blockConst);
