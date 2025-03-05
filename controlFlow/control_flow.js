@@ -1,3 +1,5 @@
+// IF statement
+
 let userRole = "admin";
 let accessLevel;
 
@@ -10,6 +12,9 @@ if (userRole === "admin") {
 }
 
 console.log("Access Level:", accessLevel);
+
+
+// Neasted IF statement
 
 let isLoggedIn = true;
 let userMessage;
@@ -25,6 +30,9 @@ if (isLoggedIn) {
 }
 
 console.log("User Message:", userMessage);
+
+
+// switch statement
 
 let userType = "subscriber";
 let userCategory;
@@ -44,3 +52,9 @@ switch (userType) {
 }
 
 console.log("User Category:", userCategory);
+
+// Ternary operator
+
+let isAuthenticated = true;
+let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
+console.log("Authentication Status:", authenticationStatus);
