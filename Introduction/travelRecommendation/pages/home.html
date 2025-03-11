@@ -32,7 +32,7 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
           <button class="btn btn-outline-success" type="submit" id="searchSendBtn">Search</button>
           <button class="btn btn-outline-danger" id="searchResetBtn">Reset</button>
         </form>
@@ -41,25 +41,19 @@
   </nav>
 
   <section class="bg-light h-100" style="--bs-bg-opacity: .5;">
-    <div class="container h-75 text-center m-5 p-5 ">
-      <div class="row align-items-left h-50 justify-content-center">
-        <div class="col-5 align-middle">
-          <h1 class="align-self-center text-center p-5"> My Tavel Recommendation systems </h1>
-        </div>
-        <div class="col-1 align-middle p-5">
-          <div class="text-center">
-            <i class="bi bi-airplane display-1 text-dark"></i>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row align-items-left h-25 mt-2 justify-content-center">
-        <div class="col-12 align-middle">
-          <h2 class="align-self-center text-center p-5"> This is the final project for the course to introduction to js
+    <div class="container h-75 text-center">
+      <div class="row align-items-left h-50 justify-content-between">
+        <div class="col-12 col-md-5">
+          <h1 class="align-self-center text-center py-5"> My Tavel Recommendation systems </h1>
+          <i class="bi bi-airplane display-1 text-dark "></i>
+          <h2 class="align-self-center text-center p-5"> 
+            This is the final project for the course to introduction to js
           </h2>
         </div>
+        <div class="col-12 col-md-5" id="recommendations">
+
+        </div>
       </div>
-    </div>
   </section>
 
 
